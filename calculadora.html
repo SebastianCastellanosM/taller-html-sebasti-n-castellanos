@@ -6,9 +6,13 @@
     <title>Documento</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="light-mode">
+   
     <div class="fondo">
         <h1>Ingenieria Web</h1>
+        <button class="modo-btn" onclick="toggleMode()">
+            <img id="modo-icon" src="images/sun.jpg" alt="Modo Claro/Oscuro">
+        </button>
         <div class="calculadora">
             <h1>Calculadora</h1>
             <p id="resultado"></p>
@@ -35,21 +39,19 @@
                     <td><button class="boton" onclick="insert('1')">1</button></td>
                     <td><button class="boton" onclick="insert('2')">2</button></td>
                     <td><button class="boton" onclick="insert('3')">3</button></td>
-                    <td rowspan="2"><button class="boton" style="height: 106px;" onclick="calcular()">=</button></td>
+                    <td><button class="boton" onclick="sqrt()">√</button></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button class="boton" style="width: 106px;" onclick="insert('0')">0</button></td>
-                    <td><button class="boton" onclick="insert('.')">.</button></td>
-                </tr>
-            </table>
+                    <td><button class="boton" onclick="insert(',')">,</button></td>
+                    <td><button class="boton" onclick="calcular()">=</button></td>
+                </tr>               
+            </table>    
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
 
-/*
-    git add .
-    git commit -m "Traducción del archivo calculadora.html al español"
-    git push origin main
-*/ 
+
+

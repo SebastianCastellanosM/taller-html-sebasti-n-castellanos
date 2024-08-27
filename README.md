@@ -18,7 +18,8 @@ Para ejecutar el proyecto en tu entorno local, sigue estos pasos:
    ```bash
    git clone https://github.com/SebastianCastellanosM/taller-html-sebasti-n-castellanos.git
 
-2. Abrir el proyecto:
+2. **Abrir el proyecto**:
+
 Navega hasta la carpeta del proyecto.
 Abre el archivo index.html en tu navegador preferido.
 No se requieren instalaciones adicionales, ya que el proyecto es una página web estática.
@@ -34,12 +35,7 @@ index.html: El archivo principal que contiene la estructura HTML de la calculado
 styles.css: Archivo que define los estilos CSS aplicados a la calculadora.
 script.js: Archivo que contiene la lógica de JavaScript para las operaciones de la calculadora.
 
-## Contribuciones
 
-Si deseas contribuir a este proyecto, sigue estos pasos:
-
-Haz un fork del repositorio.
-Crea una nueva rama (git checkout -b feature/tu-feature).
-Realiza tus cambios y haz un commit (git commit -am 'Añadir nueva característica').
-Haz un push a la rama (git push origin feature/tu-feature).
-Abre una Pull Request.
+git remote add origin https://github.com/20242-Ingenieria-Web-Udea-MJ/taller-html-sebastian-castellanos.git
+git branch -M main
+git push -u origin main

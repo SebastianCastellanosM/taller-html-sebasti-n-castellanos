@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+
+
 .fondo{
     background-image: linear-gradient(45deg,black, rgb(213, 20, 220));
     height: 100vh;
@@ -9,6 +12,8 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+
 .calculadora{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
@@ -28,9 +33,7 @@
     border: none;
     color: #fff;
 }
-.boton:hover{
-    background-color: black;
-}
+
 #resultado{
     background-color: white;
     width: 207px;
@@ -40,4 +43,76 @@
     color: black;
     text-align: right;
     padding: 5px;
+}
+
+
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para el modo claro */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.calculadora.light-mode h1 {
+    color: black; /* Cambiar el color del h1 a negro en modo claro */
+}
+
+.calculadora.light-mode {
+    background-color: #f0f0f0;
+}
+
+.boton.light-mode {
+    background-color: #ddd;
+    color: black;
+}
+.boton.light-mode:hover {
+    background-color: rgb(0, 255, 255);
+    color: black;
+    font-size: 40px;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.calculadora.dark-mode {
+    background-color: #000000;
+}
+
+.boton.dark-mode {
+    background-color: #444;
+    color: white;
+}
+.boton.dark-mode:hover {
+    background-color: rgb(0, 255, 255);
+    color: black;
+    font-size: 40px;
+}
+
+/* Estilos del botón para cambiar de modo */
+.modo-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #888;
+    color: white;
+}
+
+.modo-btn img {
+    margin: 0;
+    width: 100px;
+    height: 50px;
+    vertical-align: middle;
 }
